@@ -1,0 +1,682 @@
+
+@font-face {
+	font-family: 'Nunito Sans'; 
+	src: local('Nunito Sans'),
+		url(../fonts/NunitoSans-Regular.ttf); 
+}
+
+@font-face {
+	font-family: 'Yeseva One'; 
+	src: local('Yeseva One'),
+		url(../fonts/YesevaOne-Regular.ttf); 
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', 'Arial';
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.text-beige {
+    color: #E3B873;
+}
+
+.text-transparent {
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.text-white {
+    color: rgb(255, 255, 255);
+}
+
+.text-black {
+    color: #363636;
+}
+
+.text-black-two {
+    color: #161616;
+}
+
+.text-gray {
+    color: #959595;
+}
+
+.text-size22 {
+    font-size: 22px;
+}
+
+.text-size20 {
+    font-size: 20px;
+}
+
+.text-size18-h /*заголовок3*/{
+    font-size: 18px;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.text-size18 {
+    font-size: 18px;
+}
+
+.text-size14 {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.text-size13 {
+    font-size: 13px;
+}
+
+.container {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #7a5b2a;
+}
+
+.button:focus {
+    color: black;
+}
+
+.button:active {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.button-empty {
+    outline: 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 10px 30px;
+    background: transparent;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.button-empty:hover {
+    color: #E3B873;
+    border: 1px solid #E3B873;
+}
+
+.button-empty:focus {
+    color: #E3B873;
+    border: 1px solid #E3B873;
+}
+
+.button-empty:active{
+    background-color: #131313;
+}
+
+.logo {
+    color: #E3B873;
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: black;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    font-size: 11px;
+}
+
+.header-navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation__item {
+    margin-right: 47px;
+}
+
+.link-header {
+    text-decoration: none;
+}
+
+.bg-header {
+    background-image: url('../img/bg-head.jpg');
+    background-size: cover;
+    height: 707px;
+    padding-top: 194px;
+}
+
+.header-phone:hover, .link-header:hover {
+    color: #E3B873;
+}
+
+.title {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+.container-title {
+    max-width: 560px;
+    padding-left: 40px;
+}
+
+.title-content {
+    line-height: 36px;
+}
+
+
+
+/*Начало секции с завершёнными проектами*/
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.bg-completed-projects {
+    background-size: cover;
+    background-color: black;
+    height: 1074px;
+    padding-top: 107px;    
+}
+
+.title-two {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+
+    margin: 0px;
+}
+
+.completed-projects {
+    line-height: 27px;
+    padding-top: 34px;
+    margin: 0px;
+}
+
+.projects-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 0px 0px 45px 0px;
+    margin: 0px;
+}
+
+.completed-projects__left {
+    margin: 0px 50px 0px 40px;
+    padding-top: 73px;    
+}
+
+.completed-projects__link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+}
+
+.completed-projects__link:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto-fit;
+}
+
+.grid-projects__item {
+    margin: 0px;
+    padding-top: 34px;
+}
+
+.scale {
+    width: 205px;
+    margin-top: 79px;
+    padding: 0px;
+}
+
+.scale-nav {
+    display: flex;
+    margin: 79px 0px 0px;
+}
+
+.scale-item {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.arrow-right {
+    transform: scalex(-1);
+}
+
+.scale {
+    margin: 0px 30px;
+}
+/*Конец секции с завершёнными проектами*/
+
+
+/*Начало секции онлайн контроль*/
+.flex-control {
+    display: flex;
+    max-width: 817px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -256px;
+}
+
+.img-camera {
+    margin: 13px 0px 31px 0px;
+}
+
+.online-control__line {
+    border-top: 2px solid #E3B873;
+    width: 55px;
+    margin: 63px 0px 34px 0px;
+}
+
+.text-control {
+    width: 680px;
+    text-align: center;
+    line-height: 37px;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 92px 0px 33px 0px;
+}
+
+.input-comment {
+    margin: 0px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.input-box {
+    line-height: 23px;
+    border: none;
+}
+
+.input-item {
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.label {
+    cursor: pointer;
+  }
+  .checkbox{
+    display: none;
+  }
+  .fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+  }
+  .fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+  }
+  .checkbox:checked + .fake::before{
+    opacity: 1;
+  }
+/*Конец секции онлайн контроль*/
+
+
+/*Начало секции ремонт*/
+.flex-repair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 147px;
+}
+
+.img-tools {
+    margin: 13px 0px 31px 0px;
+}
+
+.repair-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.repair-block__container {
+    width: 330px;
+    margin: auto;
+    margin-top: -128px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    padding: 25px 34px 34px 34px;
+    margin-bottom: -20px;
+}
+
+.repair-list {
+    padding-inline-start: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+.img-repair {
+    width: 392px;
+    height: 421px;
+}
+
+.img-one {
+    background-image: url(../img/repair01.jpg);
+}
+
+.img-two {
+    background-image: url(../img/repair02.jpg);
+}
+
+.img-three {
+    background-image: url(../img/repair03.jpg);
+}
+/*Конец секции ремонт*/
+
+
+/*Начало секции заявки*/
+.request-container__left {
+    width: 400px;
+    margin-right: 206px;
+}
+
+.request-container__right {
+    background-color: #131313;
+    box-shadow: 0px 30px 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 28px 49px 28px 49px;
+    min-height: 506px;
+    width: 506px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.request-container__right .text-size13 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.request-container__right .text-size14 {
+    white-space: nowrap;
+}
+
+.request-container__right .input-box {
+    background-color: #131313;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.request-container__right .flex {
+    justify-content: flex-end;
+}
+
+.request-container__right .text-size18 {
+    justify-content: center;    
+}
+
+.request-litst {
+    counter-reset: list;
+    align-items: baseline;
+    padding-inline-start: 0px;
+}
+
+.request-litst__item {
+    counter-increment: list;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 102px;
+}
+
+.request-container__right .input-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);   
+}
+
+.request-litst__item::before {
+    content: "0" counter(list);
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    min-height: 42px;
+    
+    color: #FFFFFF;
+    background-color: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 100%;
+    margin-right: 17px;
+}
+
+.bg-request {
+    margin-top: 240px;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg-request.jpg);
+    background-position: 0px -88px;
+}
+
+.pig {
+    justify-content: right;
+    margin: -100px 0px 0px 0px;
+}
+
+.pig .text-size18 {
+    margin: 0px 5% 0px 25px;
+}
+/*Конец секции заявки*/
+
+
+
+/*Начало секции фантазии*/
+.bg-fantasies {
+    background-image: url('../img/bg-fantasies.jpg');
+    background-size: cover;
+    height: 865px;
+    margin-top: 242px;
+    position: relative;
+}
+
+.bg-fantasies > .container {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.fantasies__left {
+    min-width: 300px;
+    padding-top: 137px;
+    line-height: 37px;
+}
+
+.fantasies__right {
+    display: flex;
+    flex-direction: column;
+    max-height: 50px;
+}
+
+.fantasies-list {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.fantasies-list__item {
+    margin-top: 14px;
+}
+
+.fantasies-list .link {
+    text-decoration: none;
+}
+
+.fantasies-list .link:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.img-fantasies01 {
+    position: relative;
+    left: -389px;
+    bottom: 40px;
+}
+
+.img-fantasies02 {
+    position: relative;
+    left: -389px;
+    bottom: 0px;
+}
+
+.img-fantasies03 {
+    position: relative;
+    left: 0px;
+    bottom: 1021px;
+}
+
+.img-fantasies04 {
+    position: relative;
+    left: 0px;
+    bottom: 981px;
+}
+/*Конец секции фантазии*/
+
+
+
+/*Начало секции клиенты*/
+.our-clients {
+    height: 1100px;
+}
+
+.clients {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients-content {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    max-width: 376px;
+    height: 455px;
+    padding: 24px 30px;
+}
+
+.photo-clients {
+    padding-right: 23px;
+}
+
+.reference {
+    width: 294px;
+    height: 54px;
+    background-image: url(../img/bg-reference.jpg);
+    background-size: cover;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    margin: 124px 0px 0px -30px;
+}
+
+.reference .text-size18-h {
+    justify-content: center;
+    margin-left: 69px;
+}
+
+.block-clients {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bg-city {
+    background-image: url(../img/bg-city.png);
+    height: 449px;
+    position: relative;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    opacity: 0.05;
+    position: relative;
+    z-index: -1;
+}
+/*Конец секции клиенты*/
+
+
+
+/*Начало секции вопросы*/
+.questions {
+    width: 883px;
+    height: 446px;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: -200px;
+    position: relative;
+}
+
+.questions > .text-size20 {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+}
+
+.questions .input-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);   
+}
+
+.questions .input-box {
+    background-color: #181818;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.flex > .input-item {
+    margin-left: 20px;
+}
+
+.questions .text-size13 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.questions .text-size14 {
+    white-space: nowrap;
+}
