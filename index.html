@@ -4,18 +4,22 @@
         <meta charset="utf-8">
         <title>Сайт студии дизайна</title>
         <link href="CSS/style.css" rel="stylesheet">
-        <link href="./fonts/YesevaOne-Regular.ttf" rel="stylesheet">
-        <link href="./fonts/NunitoSans-Regular.ttf" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     </head>
     <body>
-        <header class="header">
+        <header class="header-footer">
             <div class="container header-content">
                 <div class="logo">
                     IC "Repair Design Project"
                 </div>
-                <nav>
+                <nav class="nav-block">
                     <ul class="header-navigation">
                         <li class="header-navigation__item"><a class="link-header text-white" href="#">HOME</a></li>
                         <li class="header-navigation__item"><a class="link-header text-white" href="#">PROJECTS</a></li>
@@ -25,8 +29,8 @@
                         <li class="header-navigation__item"><a class="link-header text-white" href="#">CONTACTS</a></li>
                     </ul>
                 </nav>
-                <a class="header-phone text-white" href="#">+7 (928) 768-32-3</a> <!-- не знаю, что предполагается, при нажатии на номер, но кажется, в макете он выделен, как ссылка -->
-                <button class="button text-white">Request a call</button>
+                <a class="header-phone text-white" href="#" title="call us">+7 (928) 768-32-3</a> <!-- не знаю, что предполагается, при нажатии на номер, но кажется, в макете он выделен, как ссылка -->
+                <button class="button text-white text-italic">Request a call</button>
             </div>
         </header>
         <main>
@@ -35,6 +39,7 @@
                     <div class="container-title">
                         <h1 class="title text-white">
                             Turnkey Repair in the
+                            <br>
                             city of <span class="text-beige">Rostov-on-Don</span>
                         </h1>
                         <p class="title-content text-white text-size22">
@@ -42,8 +47,8 @@
                             with work time saving up to 45 days and 20% from
                             cost of materials due to the organization of work
                         </p>
-                        <button class="button text-white">CALCULATE THE COST</button>
-                        <button class="button-empty text-white">SUBMIT YOUR APPLICATION</button>
+                        <button class="button text-white text-italic">CALCULATE THE COST</button>
+                        <button class="button-empty text-white text-italic">SUBMIT YOUR APPLICATION</button>
                     </div>
                 </div>
             </section>
@@ -60,6 +65,11 @@
                             Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
                             market we have made happy more than 1000 families
                         </p>
+                        <img class="for-mobile" src="img/patriotic1.jpg" alt="фотография проекта 1">
+                        <div class="flex-arrow">
+                            <button class="bg-arrow" href="#" title="arrow left"><img class="arrow-left" src="./img/arrow02.svg" alt="arrow left"></button>
+                            <button class="bg-arrow" href="#" title="arrow right"><img class="arrow-right" src="./img/arrow02.svg" alt="arrow right"></button>
+                        </div>
                         <div class="grid-projects">
                             <div class="grid-projects__item">
                                 <h3 class="text-beige text-size18-h">CITY:</h3>
@@ -90,7 +100,7 @@
                             <li class="projects-list__item"><a href="#" class="completed-projects__link">Sochi Thieves</a></li>
                             <li class="projects-list__item"><a href="#" class="completed-projects__link">Rostov-on-Don Patriotic</a></li>
                         </ul>
-                        <img src="img/patriotic1.jpg" alt="фотография проекта 1" style="color: white;">
+                        <img src="img/patriotic1.jpg" alt="фотография проекта 1">
                     </div>
                 </div>
             </section>
@@ -99,7 +109,7 @@
                 <div class="container flex-control">
                     <h2 class="title-two text-white">ONLINE CONTROL</h2>
                     <img class="img-camera" src="img/camera.svg" alt="картинка камеры" style="width: 114px;">
-                    <iframe src="#" width="817" height="434"></iframe>
+                    <iframe src="#" class="iframe"></iframe>
                     <hr class="online-control__line">
                     <p class="text-control text-black text-size18">
                         At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
@@ -143,7 +153,7 @@
                                 <div>
                                     <h3 class="text-size18-h text-black">Redecorating</h3>
                                 </div>
-                                <ul class="repair-list text-size13">
+                                <ul class="repair-list text-size13 text-gray">
                                     <li>Dismantling of old coatings</li>
                                     <li>Wallpapering</li>
                                     <li>Painting walls and ceilings</li>
@@ -288,6 +298,11 @@
                         <img class="img-fantasies03" src="./img/fantasies03.jpg" alt="фотография дизана комнаты 03">
                         <img class="img-fantasies04" src="./img/fantasies04.jpg" alt="фотография дизана комнаты 04">
                     </div>
+                    <img class="for-mobile" src="img/patriotic1.jpg" alt="фотография проекта 1">
+                    <div class="flex-arrow">
+                        <button class="bg-arrow" href="#" title="arrow left"><img class="arrow-left" src="./img/arrow02.svg" alt="arrow left"></button>
+                        <button class="bg-arrow" href="#" title="arrow right"><img class="arrow-right" src="./img/arrow02.svg" alt="arrow right"></button>
+                    </div>
                 </div>
             </section>
 
@@ -388,9 +403,9 @@
                 </div>
             </section>
 
-            <section class="container">
-                <div class="questions text-white">
-                    <h2 class="text-size20 text-white">HAVE ANY QUESTIONS?</h2>
+            <section class="bg-questions">
+                <div class="questions text-white container">
+                    <h2 class="text-size20-h text-white">HAVE ANY QUESTIONS?</h2>
                     <div class="flex">
                         <div class="input-item">
                             <p class="input-comment text-size13 .text-white">Name</p>
@@ -407,10 +422,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="input-item">
-                        <p class="input-comment text-size13 .text-white">Email</p>
+                    <div class="input-item questions-email">
+                        <p class="input-comment text-size13 .text-white">Question</p>
                         <div class="flex input">
-                            <p class="text-size14 text-white">Your email:</p>
+                            <p class="text-size14 text-white">I want to know:</p>
                             <input class="input-box" type="text">
                         </div>
                     </div>
@@ -421,13 +436,59 @@
                             <span class="text-size14">I agree to the processing of personal data.</span>
                         </label>
                     </div>
-                    <div class="flex">
-                        <button class="button text-white">Call the measurer</button>
+                    <button class="button text-white">Call the measurer</button>
+                </div>
+            </section>
+            <section class="bg-maps">
+                <div class="container flex-map">
+                    <div class="container-title">
+                        <h2 class="text-size20-h text-beige">
+                            ROSTOV-ON-DON, NANSEN ST., 239 SHOPPING CENTER
+                            <br>
+                            DECORUM TEL +7 (928) 768 32 29
+                        </h2>
+                        <div class="flex-contact">
+                            <a class="contact-item" href="#" title="contact mail"><img class="img-contact-mail" src="./img/contact-mail.svg" alt="contact mail"></a>
+                            <a class="contact-item" href="#" title="contact instagram"><img class="img-contact-insta" src="./img/contact-inst.svg" alt="contact instagram"></a>
+                        </div>
                     </div>
+                    <iframe class="iframe" src="#"></iframe>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="header-footer">
+            <div class="container header-content">
+                <div class="logo">
+                    IC "Repair Design Project"
+                </div>
+                <nav>
+                    <ul class="header-navigation">
+                        <li class="header-navigation__item"><a class="link-header text-white" href="#">HOME</a></li>
+                        <li class="header-navigation__item"><a class="link-header text-white" href="#">PROJECTS</a></li>
+                        <li class="header-navigation__item"><a class="link-header text-white" href="#">MEASUREMENT</a></li>
+                        <li class="header-navigation__item"><a class="link-header text-white" href="#">TEAM</a></li>
+                        <li class="header-navigation__item"><a class="link-header text-white" href="#">REVIEWS</a></li>
+                        <li class="header-navigation__item"><a class="link-header text-white" href="#">CONTACTS</a></li>
+                    </ul>
+                </nav>
+                <a class="header-phone text-white" href="#" title="call us">+7 (928) 768-32-3</a> <!-- не знаю, что предполагается, при нажатии на номер, но кажется, в макете он выделен, как ссылка -->
+                <button class="button text-white">Request a call</button>
+            </div>
+            <div class="footer-mobile">
+                <div class="container flex-map">
+                    <div class="container-title">
+                        <h2 class="text-size20-h text-beige">
+                            ROSTOV-ON-DON, NANSEN ST., 239 SHOPPING CENTER
+                            <br>
+                            DECORUM TEL +7 (928) 768 32 29
+                        </h2>
+                        <div class="flex-contact">
+                            <a class="contact-item" href="#" title="contact mail"><img class="img-contact" src="./img/contact-mail.svg" alt="contact mail"></a>
+                            <a class="contact-item" href="#" title="contact instagram"><img class="img-contact" src="./img/contact-inst.svg" alt="contact instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
