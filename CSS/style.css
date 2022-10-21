@@ -212,6 +212,7 @@ body * {
 .flex {
     display: flex;
     align-items: flex-start;
+    align-items: center;
 }
 
 .flex-top {
@@ -663,8 +664,8 @@ body * {
     position: relative;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     opacity: 0.05;
-    position: relative;
-    z-index: -1;
+    /* position: relative;
+    z-index: -1; */
 }
 /*Конец секции клиенты*/
 
@@ -865,6 +866,8 @@ body * {
         width: 100%;
         margin-top: -40%;
         padding-bottom: calc(40% - 36px);
+        position: relative;
+        z-index: 2;
     }
 
     .bg-arrow {
@@ -944,7 +947,7 @@ body * {
     .input-item .input-box {
         background-color: #131313;
         color: #FFFFFF;
-        width: 80%;
+        width: 75%;
     }
 
     .text-control {
@@ -1030,6 +1033,8 @@ body * {
 
     .bg-fantasies .for-mobile {
         padding-top: 25px;
+        position: relative;
+        z-index: 1;
     }
 
     /*Начало секции клиенты*/
@@ -1052,12 +1057,11 @@ body * {
         background-color: #131313;
         width: 100%;
         margin-top: -121px;
-        position: relative;
-        z-index: -1;
     }
 
     .questions .flex {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .questions > .flex {
@@ -1065,14 +1069,14 @@ body * {
     }
 
     .questions .input-item {
-        margin-right: 0px;
-        width: 80%;
-    }
-
-    .questions .input-item {
         width: 100%;
         margin-top: 50px;
         margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .questions .input-box {
+        width: 100%;
     }
 
     .questions .button {
